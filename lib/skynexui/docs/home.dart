@@ -39,6 +39,7 @@ class DocHome extends StatelessWidget {
                 color: {
                   Breakpoints.xs: Colors.white,
                 },
+                padding: {Breakpoints.xs: 50},
                 backgroundColor: {
                   Breakpoints.xs: Colors.blue,
                   Breakpoints.sm: Colors.red,

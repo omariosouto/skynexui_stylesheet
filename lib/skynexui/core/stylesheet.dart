@@ -11,6 +11,7 @@ class StyleSheet {
   final double? height;
   final Map<Breakpoints, Color> color;
   final Map<Breakpoints, Color> backgroundColor;
+  final Map<Breakpoints, double> padding;
   // ===============
 
   const StyleSheet({
@@ -26,6 +27,9 @@ class StyleSheet {
     },
     this.color = const {
       Breakpoints.xs: Colors.white,
+    },
+    this.padding = const {
+      Breakpoints.xs: 0,
     },
     // ===============
   });

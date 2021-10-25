@@ -24,11 +24,15 @@ class Box extends StatelessWidget {
     var screenSize = MediaQuery.of(context).size.width;
     var breakpoint = getCurrentBreakpoint(screenSize);
 
+    // Values;
+    double padding = styleSheet.padding[breakpoint] as double;
+
     return DefaultTextStyle.merge(
         style: TextStyle(
           color: styleSheet.color[breakpoint],
         ),
         child: Container(
+          padding: EdgeInsets.all(padding),
           decoration: BoxDecoration(
             color: styleSheet.backgroundColor[breakpoint],
           ),
